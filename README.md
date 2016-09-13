@@ -1,9 +1,9 @@
-OPML-Parser
+opml-parser
 ==================
 
-[![License](https://poser.pugx.org/imelgrat/OPML-Parser/license)](https://packagist.org/packages/imelgrat/OPML-Parser)
-[![Latest Stable Version](https://poser.pugx.org/imelgrat/OPML-Parser/v/stable)](https://packagist.org/packages/imelgrat/OPML-Parser)
-[![Total Downloads](https://poser.pugx.org/imelgrat/OPML-Parser/downloads)](https://packagist.org/packages/imelgrat/OPML-Parser)
+[![License](https://poser.pugx.org/imelgrat/opml-parser/license)](https://packagist.org/packages/imelgrat/opml-parser)
+[![Latest Stable Version](https://poser.pugx.org/imelgrat/opml-parser/v/stable)](https://packagist.org/packages/imelgrat/opml-parser)
+[![Total Downloads](https://poser.pugx.org/imelgrat/opml-parser/downloads)](https://packagist.org/packages/imelgrat/opml-parser)
 
 OPML Parser Class: Extract the properties of content from OPML files. 
 
@@ -24,24 +24,24 @@ Installation
 
 The recommended installation method is through
 [Composer](http://getcomposer.org/), a dependency manager for PHP. Just add
-`imelgrat/OPML-Parser` to your project's `composer.json` file:
+`imelgrat/opml-parser` to your project's `composer.json` file:
 
 ```json
 {
     "require": {
-        "imelgrat/OPML-Parser": "*"
+        "imelgrat/opml-parser": "*"
     }
 }
 ```
 
-[More details](http://packagist.org/packages/imelgrat/OPML-Parser) can
+[More details](http://packagist.org/packages/imelgrat/opml-parser) can
 be found over at [Packagist](http://packagist.org).
 
 ### Manually
 
-1.  Copy `src/OPML-Parser.php` to your codebase, perhaps to the `vendor`
+1.  Copy `src/opml-parser.php` to your codebase, perhaps to the `vendor`
     directory.
-2.  Add the `OPML-Parser` class to your autoloader or `require` the file
+2.  Add the `opml-parser` class to your autoloader or `require` the file
     directly.
 
 Feedback
