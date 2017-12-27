@@ -1,4 +1,4 @@
-opml-parser
+OPML Parser
 ==================
 
 [![License](https://poser.pugx.org/imelgrat/opml-parser/license)](https://packagist.org/packages/imelgrat/opml-parser)
@@ -10,7 +10,7 @@ OPML Parser Class: Extract the properties of content from OPML files.
 The class retrieves local or remote OPML file and parses it to extract its content into a PHP iterator.
 Each of the iterator elements contains the URLs of the listed content as well all other the properties of each content entry such as: name, link target, description, RSS feed, creation date and content type (RSS, HTML, song, booklist, etc..).
 
-Developed by [Ivan Melgrati](https://twitter.com/imelgrat) 
+Developed by [Ivan Melgrati](https://imelgrat.me) [![Twitter](https://img.shields.io/twitter/url/https/github.com/imelgrat/tab-collapse.svg?style=social)](https://twitter.com/imelgrat)
 
 Requirements
 ------------
