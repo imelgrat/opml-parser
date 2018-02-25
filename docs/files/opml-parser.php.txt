@@ -4,7 +4,7 @@
 	 *
 	 * @package opml-parser
 	 * @author    Ivan Melgrati
-	 * @version   v2.0.0 stable 
+	 * @version   2.1.0
 	 */
 
 	if (!class_exists('OPML_Parser'))
@@ -13,9 +13,9 @@
 		 * A PHP-based OPML (Outline Processor Markup Language) Parser Class. Extracts content from OPML files.
 		 * 
 		 * @author    Ivan Melgrati
-		 * @copyright Copyright 2016 by Ivan Melgrati
+		 * @copyright Copyright 2018 by Ivan Melgrati
 		 * @license   MIT https://github.com/imelgrat/OPML-Parser/blob/master/LICENSE
-		 * @version   v2.0.0 stable 
+		 * @version   2.1.0
 		 * @link https://en.wikipedia.org/wiki/OPML
 		 * @link http://dev.opml.org/spec2.html
 		 * @link http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html
@@ -154,7 +154,7 @@
 
 			/**
 			 * OPML_Parser::getOPMLFile()
-			 * Fetch Contents of Page (from file or URL) 
+			 * Fetch Contents of Page (from file or URL). Queries are performed using cURL and, if not available, using file_get_contents() 
 			 *
 			 * @param string $location The location (file or URL) of the OPML file 
 			 * @param  resource $context stream context from `stream_context_create()`. Contexts can be passed to most filesystem related stream creation functions (i.e. fopen(), file(), file_get_contents(), etc...). 
@@ -162,7 +162,28 @@
 			 */
 			protected function getOPMLFile($location = '', $context = null)
 			{
-				$contents = @file_get_contents($location);
+				if  (in_array  ('curl', get_loaded_extensions())) 
+				{
+					$options = array(
+						CURLOPT_RETURNTRANSFER => true,   // return web page
+						CURLOPT_HEADER         => false,  // don't return headers
+						CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+						CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+						CURLOPT_ENCODING       => "",     // handle compressed
+						CURLOPT_USERAGENT      => "test", // name of client
+						CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+						CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+						CURLOPT_TIMEOUT        => 120,    // time-out on response
+					); 
+
+					$ch = curl_init($location);
+					curl_setopt_array($ch, $options);
+					$contents  = curl_exec($ch);
+				}
+				else 
+				{
+					$contents = file_get_contents($location, false, $context);
+				}	
 				return $contents;
 			}
 

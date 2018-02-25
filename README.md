@@ -1,16 +1,21 @@
 OPML Parser
 ==================
 
-[![License](https://poser.pugx.org/imelgrat/opml-parser/license)](https://packagist.org/packages/imelgrat/opml-parser)
-[![Latest Stable Version](https://poser.pugx.org/imelgrat/opml-parser/v/stable)](https://packagist.org/packages/imelgrat/opml-parser)
+[![GitHub license](https://img.shields.io/github/license/imelgrat/opml-parser.svg?style=flat-square)](https://github.com/imelgrat/opml-parser/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/imelgrat/opml-parser.svg?style=flat-square)](https://github.com/imelgrat/opml-parser/releases)
 [![Total Downloads](https://poser.pugx.org/imelgrat/opml-parser/downloads)](https://packagist.org/packages/imelgrat/opml-parser)
+[![GitHub issues](https://img.shields.io/github/issues/imelgrat/opml-parser.svg?style=flat-square)](https://github.com/imelgrat/opml-parser/issues)
+[![GitHub stars](https://img.shields.io/github/stars/imelgrat/opml-parser.svg?style=flat-square)](https://github.com/imelgrat/opml-parser/stargazers)
+
 
 OPML Parser Class: Extract the properties of content from OPML files. 
 
-The class retrieves local or remote OPML file and parses it to extract its content into a PHP iterator.
-Each of the iterator elements contains the URLs of the listed content as well all other the properties of each content entry such as: name, link target, description, RSS feed, creation date and content type (RSS, HTML, song, booklist, etc..).
+The class retrieves local or remote OPML file and parses it to extract its content into a PHP iterator. Each of the iterator elements contains the URLs of the listed content as well all other the properties of each content entry such as: name, link target, description, RSS feed, creation date and content type (RSS, HTML, song, booklist, etc..).
 
-Developed by [Ivan Melgrati](https://imelgrat.me) [![Twitter](https://img.shields.io/twitter/url/https/github.com/imelgrat/tab-collapse.svg?style=social)](https://twitter.com/imelgrat)
+A file with the OPML file extension is an Outline Processor Markup Language file. It's saved using the XML format, and is used to exchange information between applications regardless of the operating system.
+The OPML file format is often seen used as the import/export format for RSS feed reader programs. Since a file of this format can hold a collection of RSS subscription information, it's the ideal format for backing up or sharing RSS feeds.
+
+Developed by [Ivan Melgrati](https://twitter.com/imelgrat) 
 
 Requirements
 ------------
@@ -41,7 +46,7 @@ be found over at [Packagist](http://packagist.org).
 
 1.  Copy `src/opml-parser.php` to your codebase, perhaps to the `vendor`
     directory.
-2.  Add the `opml-parser` class to your autoloader or `require` the file
+2.  Add the `OPML_Parser` class to your autoloader or `require` the file
     directly.
 
 Feedback

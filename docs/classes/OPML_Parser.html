@@ -3,16 +3,14 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>OPML Parser Class: Extract the properties of content from OPML files.</title>
+    <title>Documentation for OPML Parser</title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
-
     <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/prism.css" rel="stylesheet" media="all"/>
     <link href="../css/template.css" rel="stylesheet" media="all"/>
-    
-    <!--[if lt IE 9]>
+        <!--[if lt IE 9]>
     <script src="../js/html5.js"></script>
     <![endif]-->
     <script src="../js/jquery-1.11.0.min.js"></script>
@@ -69,22 +67,25 @@
         loadExternalCodeSnippets();
     })
 </script>
-
     <link rel="shortcut icon" href="../images/favicon.ico"/>
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
     <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="../images/apple-touch-icon-192x192.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png"/>
+	<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <i class="icon-ellipsis-vertical"></i>
             </a>
-            <a class="brand" href="../index.html">OPML Parser Class: Extract the properties of content from OPML files.</a>
-
+            <a class="brand" href="../index.html">OPML Parser</a>
             <div class="nav-collapse">
                 <ul class="nav pull-right">
                                         <li class="dropdown" id="charts-menu">
@@ -136,10 +137,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1632582644"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-434993607"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1632582644" class="accordion-body collapse in">
+            <div id="namespace-434993607" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -252,9 +253,9 @@
                         
                         
                                                                             <dt>See also</dt>
-                                                                                        <dd><a href="https://en.wikipedia.org/wiki/OPML"><span class="namespace-wrapper">https://en.wikipedia.org/wiki/OPML</span></a></dd>
-                                                            <dd><a href="http://dev.opml.org/spec2.html"><span class="namespace-wrapper">http://dev.opml.org/spec2.html</span></a></dd>
-                                                            <dd><a href="http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html"><span class="namespace-wrapper">http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html</span></a></dd>
+                                                                                    <dd><a target="_blank" href="https://en.wikipedia.org/wiki/OPML"><div class="namespace-wrapper">https://en.wikipedia.org/wiki/OPML</div></a></dd>
+                                                        <dd><a target="_blank" href="http://dev.opml.org/spec2.html"><div class="namespace-wrapper">http://dev.opml.org/spec2.html</div></a></dd>
+                                                        <dd><a target="_blank" href="http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html"><div class="namespace-wrapper">http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html</div></a></dd>
                                                     
                                                                         </dl>
                     <h2>Tags</h2>
@@ -272,7 +273,7 @@
                                 copyright
                             </th>
                             <td>
-                                                                    <p>Copyright 2016 by Ivan Melgrati</p>
+                                                                    <p>Copyright 2018 by Ivan Melgrati</p>
                                                             </td>
                         </tr>
                                             <tr>
@@ -288,7 +289,7 @@
                                 version
                             </th>
                             <td>
-                                                                    <p>v2.0.0 stable</p>
+                                                                    
                                                             </td>
                         </tr>
                                         </table>
@@ -308,7 +309,7 @@
         <div class="span8 content class">
             <a id="property_parser" name="property_parser" class="anchor"></a>
             <article class="property">
-                <h3 class="protected ">$parser</h3>
+                <h3 class="protected "><span class="instance"></span>$parser</h3>
                 <pre class="signature">$parser : resource</pre>
                 <p><em>Resource handle to an XML parser to be used by the other XML functions.</em></p>
                 
@@ -332,7 +333,7 @@
         <div class="span8 content class">
             <a id="property_position" name="property_position" class="anchor"></a>
             <article class="property">
-                <h3 class="protected ">$position</h3>
+                <h3 class="protected "><span class="instance"></span>$position</h3>
                 <pre class="signature">$position : integer</pre>
                 <p><em>Position inside OPML list (used for iterating over OPML results)</em></p>
                 
@@ -356,7 +357,7 @@
         <div class="span8 content class">
             <a id="property_opml_contents" name="property_opml_contents" class="anchor"></a>
             <article class="property">
-                <h3 class="protected ">$opml_contents</h3>
+                <h3 class="protected "><span class="instance"></span>$opml_contents</h3>
                 <pre class="signature">$opml_contents : array</pre>
                 <p><em>Array containing all parsed items</em></p>
                 
@@ -380,7 +381,7 @@
         <div class="span8 content class">
             <a id="property_unparsed_opml" name="property_unparsed_opml" class="anchor"></a>
             <article class="property">
-                <h3 class="protected ">$unparsed_opml</h3>
+                <h3 class="protected "><span class="instance"></span>$unparsed_opml</h3>
                 <pre class="signature">$unparsed_opml : string</pre>
                 <p><em>String containing the unparsed OPML string</em></p>
                 
@@ -404,7 +405,7 @@
         <div class="span8 content class">
             <a id="property_opml_map_vars" name="property_opml_map_vars" class="anchor"></a>
             <article class="property">
-                <h3 class="protected ">$opml_map_vars</h3>
+                <h3 class="protected "><span class="instance"></span>$opml_map_vars</h3>
                 <pre class="signature">$opml_map_vars : </pre>
                 <p><em>Outline attributes we wish to map and their mapping names (only the most common attributes were added, more attributes may be added later)</em></p>
                 
@@ -435,7 +436,7 @@
         <div class="span8 content class">
             <a id="method_OPML_Parser" name="method_OPML_Parser" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">OPML_Parser()</h3>
+                <h3 class="public "><span class="instance"></span>OPML_Parser()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">OPML_Parser() : \OPML_Parser</pre>
                 <p><em>Constructor.</em></p>
@@ -463,7 +464,7 @@
         <div class="span8 content class">
             <a id="method_rewind" name="method_rewind" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">rewind()</h3>
+                <h3 class="public "><span class="instance"></span>rewind()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">rewind() : void</pre>
                 <p><em>OPML_Parser::rewind()
@@ -490,7 +491,7 @@ This rewinds the iterator to the beginning.</em></p>
         <div class="span8 content class">
             <a id="method_current" name="method_current" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">current()</h3>
+                <h3 class="public "><span class="instance"></span>current()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">current() : mixed</pre>
                 <p><em>OPML_Parser::current()
@@ -520,7 +521,7 @@ Return the current element</em></p>
         <div class="span8 content class">
             <a id="method_key" name="method_key" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">key()</h3>
+                <h3 class="public "><span class="instance"></span>key()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">key() : scalar</pre>
                 <p><em>OPML_Parser::key()
@@ -550,7 +551,7 @@ Return the key of the current element</em></p>
         <div class="span8 content class">
             <a id="method_next" name="method_next" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">next()</h3>
+                <h3 class="public "><span class="instance"></span>next()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">next() : void</pre>
                 <p><em>OPML_Parser::next()
@@ -577,7 +578,7 @@ Move he iterator to the next entry.</em></p>
         <div class="span8 content class">
             <a id="method_valid" name="method_valid" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">valid()</h3>
+                <h3 class="public "><span class="instance"></span>valid()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">valid() : boolean</pre>
                 <p><em>OPML_Parser::valid()
@@ -607,7 +608,7 @@ Checks if current position is valid</em></p>
         <div class="span8 content class">
             <a id="method_ParseLocation" name="method_ParseLocation" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">ParseLocation()</h3>
+                <h3 class="public "><span class="instance"></span>ParseLocation()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">ParseLocation(string  <span class="argument">$location</span>, resource  <span class="argument">$context = null</span>) </pre>
                 <p><em>OPML_Parser::ParseLocation()
@@ -647,7 +648,7 @@ Parse contents from OPML file or URL</em></p>
         <div class="span8 content class">
             <a id="method_ParseOPML" name="method_ParseOPML" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">ParseOPML()</h3>
+                <h3 class="public "><span class="instance"></span>ParseOPML()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">ParseOPML(string  <span class="argument">$opml</span>) </pre>
                 <p><em>OPML_Parser::ParseOPML()
@@ -682,7 +683,7 @@ Parse contents from OPML string</em></p>
         <div class="span8 content class">
             <a id="method_getUnparsedOPML" name="method_getUnparsedOPML" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">getUnparsedOPML()</h3>
+                <h3 class="public "><span class="instance"></span>getUnparsedOPML()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getUnparsedOPML() : string</pre>
                 <p><em>OPML_Parser::getUnparsedOPML()
@@ -712,7 +713,7 @@ Get the unparsed OPML string</em></p>
         <div class="span8 content class">
             <a id="method_setAttribute" name="method_setAttribute" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">setAttribute()</h3>
+                <h3 class="public "><span class="instance"></span>setAttribute()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setAttribute(string  <span class="argument">$attribute</span>, string  <span class="argument">$mapped_attribute = &#039;&#039;</span>) </pre>
                 <p><em>OPML_Parser::setAttribute()
@@ -752,7 +753,7 @@ Add (or replace) an OPML attribute to parser&#039;s attribute list</em></p>
         <div class="span8 content class">
             <a id="method_unsetAttribute" name="method_unsetAttribute" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">unsetAttribute()</h3>
+                <h3 class="public "><span class="instance"></span>unsetAttribute()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">unsetAttribute(string  <span class="argument">$attribute</span>) </pre>
                 <p><em>OPML_Parser::unsetAttribute()
@@ -787,11 +788,11 @@ Remove an OPML attribute to parser&#039;s attribute list</em></p>
         <div class="span8 content class">
             <a id="method_getOPMLFile" name="method_getOPMLFile" class="anchor"></a>
             <article class="method">
-                <h3 class="protected ">getOPMLFile()</h3>
+                <h3 class="protected "><span class="instance"></span>getOPMLFile()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">getOPMLFile(string  <span class="argument">$location = &#039;&#039;</span>, resource  <span class="argument">$context = null</span>) : string</pre>
                 <p><em>OPML_Parser::getOPMLFile()
-Fetch Contents of Page (from file or URL)</em></p>
+Fetch Contents of Page (from file or URL). Queries are performed using cURL and, if not available, using file_get_contents()</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -830,7 +831,7 @@ Fetch Contents of Page (from file or URL)</em></p>
         <div class="span8 content class">
             <a id="method_ParseElementStart" name="method_ParseElementStart" class="anchor"></a>
             <article class="method">
-                <h3 class="protected ">ParseElementStart()</h3>
+                <h3 class="protected "><span class="instance"></span>ParseElementStart()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">ParseElementStart(resource  <span class="argument">$parser</span>, string  <span class="argument">$tagName</span>, array  <span class="argument">$attrs</span>) </pre>
                 <p><em>OPML_Parser::ParseElementStart()
@@ -875,7 +876,7 @@ The XML tag-open handler. It is used here to parse and store attributes from out
         <div class="span8 content class">
             <a id="method_ParseElementEnd" name="method_ParseElementEnd" class="anchor"></a>
             <article class="method">
-                <h3 class="protected ">ParseElementEnd()</h3>
+                <h3 class="protected "><span class="instance"></span>ParseElementEnd()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">ParseElementEnd(resource  <span class="argument">$parser</span>, string  <span class="argument">$tagName</span>) </pre>
                 <p><em>OPML_Parser::ParseElementEnd()
@@ -915,7 +916,7 @@ The XML tag-close handler. It is used for processing closed tags (not used in th
         <div class="span8 content class">
             <a id="method_ParseElementCharData" name="method_ParseElementCharData" class="anchor"></a>
             <article class="method">
-                <h3 class="protected ">ParseElementCharData()</h3>
+                <h3 class="protected "><span class="instance"></span>ParseElementCharData()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">ParseElementCharData(resource  <span class="argument">$parser</span>, string  <span class="argument">$data</span>) </pre>
                 <p><em>OPML_Parser::ParseElementCharData()
@@ -955,7 +956,7 @@ The XML char data handler. It is used for processing char data (not used in this
         <div class="span8 content class">
             <a id="method_Parser" name="method_Parser" class="anchor"></a>
             <article class="method">
-                <h3 class="protected ">Parser()</h3>
+                <h3 class="protected "><span class="instance"></span>Parser()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">Parser(string  <span class="argument">$XMLdata</span>) </pre>
                 <p><em>OPML_Parser::Parser()
@@ -998,20 +999,12 @@ Parse the OPML data (resulting data stored in $opml_contents)</em></p>
             <pre data-src="../files/opml-parser.php.txt" class="language-php line-numbers"></pre>
         </div>
     </div>
-
     <footer class="row-fluid">
         <section class="span10 offset2">
             <section class="row-fluid">
                 <section class="span10 offset1">
                     <section class="row-fluid footer-sections">
-                        <section class="span4">
-                                                        <h1><i class="icon-code"></i></h1>
-                            <div>
-                                <ul>
-                                                                    </ul>
-                            </div>
-                        </section>
-                        <section class="span4">
+                                                <section class="span4">
                                                         <h1><i class="icon-bar-chart"></i></h1>
                             <div>
                                 <ul>
@@ -1034,8 +1027,7 @@ Parse the OPML data (resulting data stored in $opml_contents)</em></p>
             <section class="row-fluid">
                 <section class="span10 offset1">
                     <hr />
-                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on September 12th, 2016 at 23:35.
+                    Documentation is powered by phpDocumentor and authored  by <a target="_blank" href="https://imelgrat.me">Iv&aacute;n Melgrati</a> on February 25th, 2018 at 23:30.
                 </section>
             </section>
         </section>
