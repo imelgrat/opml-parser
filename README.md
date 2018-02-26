@@ -10,10 +10,11 @@ OPML Parser
 
 OPML Parser Class: Extract the properties of content from OPML files. 
 
+A file with the OPML file extension is an Outline Processor Markup Language file. It's saved using the XML format, and is used to exchange information between applications regardless of the operating system.
+
+The OPML file format is often seen used as the import/export format for RSS feed reader programs. Since a file of this format can hold a collection of RSS subscription information, it's the ideal format for backing up or sharing RSS feeds.
 The class retrieves local or remote OPML file and parses it to extract its content into a PHP iterator. Each of the iterator elements contains the URLs of the listed content as well all other the properties of each content entry such as: name, link target, description, RSS feed, creation date and content type (RSS, HTML, song, booklist, etc..).
 
-A file with the OPML file extension is an Outline Processor Markup Language file. It's saved using the XML format, and is used to exchange information between applications regardless of the operating system.
-The OPML file format is often seen used as the import/export format for RSS feed reader programs. Since a file of this format can hold a collection of RSS subscription information, it's the ideal format for backing up or sharing RSS feeds.
 
 Developed by [Ivan Melgrati](https://twitter.com/imelgrat) 
 
