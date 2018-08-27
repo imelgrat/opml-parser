@@ -17,7 +17,7 @@
     "autoload": {
         "psr-4": {
             "imelgrat\\OPML_Parser\\": "src/",
-            "": "src/",
+            "": "src/"
         }
     },
     "require": {
