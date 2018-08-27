@@ -43,6 +43,32 @@ The recommended installation method is through
 [More details](http://packagist.org/packages/imelgrat/opml-parser) can
 be found over at [Packagist](http://packagist.org).
 
+Then, in order to use the OPML class, you need to invoke the "use" 
+
+```php
+<?php
+use imelgrat\OPML_Parser\OPML_Parser;
+
+$parser = new OPML_Parser();
+
+// Get OPML from URL
+$parser->ParseLocation('http://www.bbc.co.uk/podcasts.opml', null);
+
+// Walk through each item in the same way as we would if $parser were a string (thanks to the Iterator interface)
+foreach ($parser as $key => $item)
+{
+	echo "<p> Item: " . $key . '</p><ul>';
+	foreach ($item as $attribute => $value)
+	{
+		echo '<li>' . '<strong>' . $attribute . '</strong>:' . $value . '</li>';
+	}
+	echo '</ul>';
+	echo '<p>&nbsp;</p>';
+
+}
+?>
+```
+
 ### Manually
 
 1.  Copy `src/opml-parser.php` to your codebase, perhaps to the `vendor`

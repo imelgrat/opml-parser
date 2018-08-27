@@ -1,20 +1,23 @@
 {
     "name": "imelgrat/opml-parser",
-    "type": "library",
     "description": "OPML Parser Class: Extract the properties of content from OPML files.",
+    "type": "library",
     "keywords": ["OPML", "XML", "OPML parser", "OPML iterator", "PHP iterator", "XML parser", "html parser", "parser", "rss parser", "parser HTML", "playlist parser"],
     "homepage": "https://github.com/imelgrat/opml-parser",
     "license": "MIT",
     "authors": [
         {
             "name": "Ivan Melgrati",
-            "homepage": "http://imelgrat.me",
+            "homepage": "https://imelgrat.me",
+            "email": "imelgrat@yahoo.com.ar",
             "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
-        "psr-0": {
-            "opml-parser": "src/"
+        "psr-4": {
+            "imelgrat\\OPML_Parser\\": "src/",
+            "": "src/",
         }
     },
     "require": {

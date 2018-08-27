@@ -4,8 +4,10 @@
 	 *
 	 * @package opml-parser
 	 * @author    Ivan Melgrati
-	 * @version   2.1.0
+	 * @version   2.2.0
 	 */
+
+	namespace imelgrat\OPML_Parser;
 
 	if (!class_exists('OPML_Parser'))
 	{
@@ -20,7 +22,7 @@
 		 * @link http://dev.opml.org/spec2.html
 		 * @link http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html
 		 */
-		class OPML_Parser implements Iterator
+		class OPML_Parser implements \Iterator
 		{
 			/**
 			 * Resource handle to an XML parser to be used by the other XML functions.
@@ -162,28 +164,28 @@
 			 */
 			protected function getOPMLFile($location = '', $context = null)
 			{
-				if  (in_array  ('curl', get_loaded_extensions())) 
+				if (in_array('curl', get_loaded_extensions()))
 				{
 					$options = array(
-						CURLOPT_RETURNTRANSFER => true,   // return web page
-						CURLOPT_HEADER         => false,  // don't return headers
-						CURLOPT_FOLLOWLOCATION => true,   // follow redirects
-						CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
-						CURLOPT_ENCODING       => "",     // handle compressed
-						CURLOPT_USERAGENT      => "test", // name of client
-						CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
-						CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
-						CURLOPT_TIMEOUT        => 120,    // time-out on response
-					); 
+						CURLOPT_RETURNTRANSFER => true, // return web page
+						CURLOPT_HEADER => false, // don't return headers
+						CURLOPT_FOLLOWLOCATION => true, // follow redirects
+						CURLOPT_MAXREDIRS => 10, // stop after 10 redirects
+						CURLOPT_ENCODING => "", // handle compressed
+						CURLOPT_USERAGENT => "test", // name of client
+						CURLOPT_AUTOREFERER => true, // set referrer on redirect
+						CURLOPT_CONNECTTIMEOUT => 120, // time-out on connect
+						CURLOPT_TIMEOUT => 120, // time-out on response
+						);
 
 					$ch = curl_init($location);
 					curl_setopt_array($ch, $options);
-					$contents  = curl_exec($ch);
+					$contents = curl_exec($ch);
 				}
-				else 
+				else
 				{
 					$contents = file_get_contents($location, false, $context);
-				}	
+				}
 				return $contents;
 			}
 
@@ -310,18 +312,18 @@
 			public function setAttribute($attribute, $mapped_attribute = '')
 			{
 				$attribute = strtoupper(preg_replace('/\s+/', '_', trim($attribute)));
-                if($mapped_attribute != '')
-                {
-                    $mapped_attribute = strtoupper(preg_replace('/\s+/', '_', trim($mapped_attribute)));
-                }
-                else
-                {
-                    $mapped_attribute = strtolower($attribute);
-                }
-                
-                $this->opml_map_vars[$attribute] = $mapped_attribute;
+				if ($mapped_attribute != '')
+				{
+					$mapped_attribute = strtoupper(preg_replace('/\s+/', '_', trim($mapped_attribute)));
+				}
+				else
+				{
+					$mapped_attribute = strtolower($attribute);
+				}
+
+				$this->opml_map_vars[$attribute] = $mapped_attribute;
 			}
-            
+
 			/**
 			 * OPML_Parser::unsetAttribute()
 			 * Remove an OPML attribute to parser's attribute list
@@ -331,9 +333,10 @@
 			public function unsetAttribute($attribute)
 			{
 				$attribute = strtoupper(preg_replace('/\s+/', '_', trim($attribute)));
-                
-                unset($this->opml_map_vars[$attribute]);
-			}            
+
+				unset($this->opml_map_vars[$attribute]);
+			}
 		}
 	}
+
 ?>

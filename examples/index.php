@@ -1,4 +1,6 @@
 <?php
+
+	use imelgrat\OPML_Parser\OPML_Parser;
 	require_once ('../src/opml-parser.php');
 ?>
 <html>
@@ -20,6 +22,7 @@
 </form>
 <p>&nbsp;</p>
 <?php
+	
 	if ($_POST['url'] != '')
 	{
 		$parser = new OPML_Parser();
