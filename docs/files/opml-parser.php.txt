@@ -4,7 +4,7 @@
 	 *
 	 * @package opml-parser
 	 * @author    Ivan Melgrati
-	 * @version   2.2.0
+	 * @version   2.2.1
 	 */
 
 	namespace imelgrat\OPML_Parser;
@@ -17,7 +17,7 @@
 		 * @author    Ivan Melgrati
 		 * @copyright Copyright 2018 by Ivan Melgrati
 		 * @license   MIT https://github.com/imelgrat/OPML-Parser/blob/master/LICENSE
-		 * @version   2.2.0
+		 * @version   2.2.1
 		 * @link https://en.wikipedia.org/wiki/OPML
 		 * @link http://dev.opml.org/spec2.html
 		 * @link http://www.phpclasses.org/package/4026-PHP-Extract-the-properties-of-content-from-OPML-files.html

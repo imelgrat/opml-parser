@@ -38,12 +38,18 @@ The recommended installation method is through
         "imelgrat/opml-parser": "*"
     }
 }
-```
 
 [More details](http://packagist.org/packages/imelgrat/opml-parser) can
 be found over at [Packagist](http://packagist.org).
 
-Then, in order to use the OPML class, you need to invoke the "use" 
+### Manually
+
+1.  Copy `src/opml-parser.php` to your codebase, perhaps to the `vendor`
+    directory.
+2.  Add the `OPML_Parser` class to your autoloader or `require` the file
+    directly.
+
+Then, in order to use the OPML class, you need to invoke the "use" operator to bring the class into skope.
 
 ```php
 <?php
@@ -68,13 +74,6 @@ foreach ($parser as $key => $item)
 }
 ?>
 ```
-
-### Manually
-
-1.  Copy `src/opml-parser.php` to your codebase, perhaps to the `vendor`
-    directory.
-2.  Add the `OPML_Parser` class to your autoloader or `require` the file
-    directly.
 
 Feedback
 --------
