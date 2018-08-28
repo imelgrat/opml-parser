@@ -16,8 +16,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "imelgrat\\OPML_Parser\\": "src/",
-            "": "src/"
+            "imelgrat\\OPML_Parser\\": "src/"
         }
     },
     "require": {
