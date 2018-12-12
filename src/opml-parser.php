@@ -89,10 +89,8 @@
 
 			/**
 			 * Constructor.
-			 *
-			 * @return OPML_Parser
 			 */
-			public function OPML_Parser()
+			public function __construct()
 			{
 				$this->parser = null;
 				$this->opml_contents = array();
