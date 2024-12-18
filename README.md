@@ -38,6 +38,7 @@ The recommended installation method is through
         "imelgrat/opml-parser": "*"
     }
 }
+```
 
 [More details](http://packagist.org/packages/imelgrat/opml-parser) can
 be found over at [Packagist](http://packagist.org).
